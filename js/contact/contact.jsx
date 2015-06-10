@@ -30,10 +30,9 @@ var Contact = React.createClass({
       var model = this.state;
       var url = 'https://node-emailer.herokuapp.com/wbserg@gmail.com/'
         + 'Notification from Blog/'
-        + model.email + 'says: ' + model.message
+        + model.email + ' says: ' + model.message
         +'?whereTheQuestionsWhereTheAnswers=WhoLetTheDogOUT!Raf!';
-      $.get(url).success(function(res){console.log(res);});
-      //window.open(url);
+      $.get(url).success(function(res){console.log('node-emailer says: ' + res);});
     },
 
     render: function() {
