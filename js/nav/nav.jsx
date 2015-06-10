@@ -16,7 +16,10 @@ var Nav = React.createClass({
 
     },
     goContact: function(){
-
+      React.render(
+        <Contact />,
+        document.getElementById("main_content")
+      );
     },
     render: function() {
       return (
