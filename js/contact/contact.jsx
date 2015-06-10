@@ -28,6 +28,12 @@ var Contact = React.createClass({
     sendEmail: function() {
       debugger
       var model = this.state;
+      var url = 'https://node-emailer.herokuapp.com/wbserg@gmail.com/'
+        + 'Notification from Blog/'
+        + model.email + 'says: ' + model.message
+        +'?whereTheQuestionsWhereTheAnswers=WhoLetTheDogOUT!Raf!';
+      $.get(url).success(function(res){console.log(res);});
+      //window.open(url);
     },
 
     render: function() {
