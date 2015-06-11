@@ -28,7 +28,10 @@ var Contact = React.createClass({
     sendEmail: function() {
       var model = this.state;
       var url = 'https://node-emailer.herokuapp.com/wbserg@gmail.com';
-      var jsonData = {to: model.email, subject: 'Notification from Blog', message: model.message};
+      var jsonData = {
+        to: 'wbserg@gmail.com',
+        subject: 'Notification from Blog',
+        message: model.name + '(' + model.email + ') says: ' + model.message};
       var jsonString = JSON.stringify(jsonData);
       $.ajax({
         url: url,
