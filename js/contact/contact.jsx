@@ -33,7 +33,6 @@ var Contact = React.createClass({
       $.ajax({
         url: url,
         method: 'PUT',
-        dataType: 'json',
         contentType: 'application/json',
         crossDomain: true,
         processdata: true,
