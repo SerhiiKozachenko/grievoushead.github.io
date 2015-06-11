@@ -31,7 +31,7 @@ var Contact = React.createClass({
       var jsonData = {
         to: 'wbserg@gmail.com',
         subject: 'Notification from Blog',
-        message: model.name + '(' + model.email + ') says: ' + model.message + (!!model.phone ? '. His Phone #: ' + model.phone : '. Have not specifiend phone number.')};
+        message: model.name + '(' + model.email + ') says: ' + model.message + (!!model.phone ? '. His Phone #: ' + model.phone : '. Have not specified phone number.')};
       var jsonString = JSON.stringify(jsonData);
       $.ajax({
         url: url,
