@@ -26,13 +26,28 @@ var Contact = React.createClass({
     },
 
     sendEmail: function() {
-      debugger
       var model = this.state;
-      var url = 'https://node-emailer.herokuapp.com/wbserg@gmail.com/'
-        + 'Notification from Blog/'
-        + model.email + ' says: ' + model.message
-        +'?whereTheQuestionsWhereTheAnswers=WhoLetTheDogOUT!Raf!';
-      $.get(url).success(function(res){console.log('node-emailer says: ' + res);});
+      var url = 'https://node-emailer.herokuapp.com/wbserg@gmail.com';
+      var jsonData = {to: model.email, subject: 'Notification from Blog', message: model.message};
+      var jsonString = JSON.stringify(jsonData);
+      $.ajax({
+        url: url,
+        method: 'PUT',
+        dataType: 'json',
+        contentType: 'application/json',
+        crossDomain: true,
+        processdata: true,
+        data: jsonString,
+        headers: {
+          whereTheQuestionsWhereTheAnswers: 'WhoLetTheDogOUT!Raf!'
+        },
+        success: function(res) {
+          console.log('Oh Yesss! Message sent successfully!');
+        },
+        error: function(err) {
+          console.log('Crap! We have a problem!');
+        }
+      });
     },
 
     render: function() {
