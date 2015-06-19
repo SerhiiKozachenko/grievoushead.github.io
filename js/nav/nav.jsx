@@ -52,6 +52,9 @@ var Nav = React.createClass({
                       <li>
                           <a href="//grievoushead.github.io/video-calls/">Video Call</a>
                       </li>
+                      <li>
+                          <a href="//grievoushead.github.io/fire-chat/">Chat</a>
+                      </li>
                   </ul>
               </div>
           </div>
