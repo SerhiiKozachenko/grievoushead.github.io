@@ -1,4 +1,6 @@
-var About = React.createClass({
+import React from 'react';
+
+let About = React.createClass({
 
  render: function() {
     return (
@@ -17,3 +19,5 @@ var About = React.createClass({
      );
   }
 });
+
+export default About;  

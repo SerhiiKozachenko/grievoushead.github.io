@@ -1,4 +1,6 @@
-var Home = React.createClass({
+import React from 'react';
+
+let Home = React.createClass({
 
     render: function() {
     return (
@@ -63,3 +65,5 @@ var Home = React.createClass({
     );
   }
 });
+
+export default Home;

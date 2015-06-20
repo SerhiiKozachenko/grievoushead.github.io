@@ -1,4 +1,6 @@
-var Contact = React.createClass({
+import React from 'react';
+
+let Contact = React.createClass({
 
     getInitialState: function() {
       return {
@@ -58,7 +60,7 @@ var Contact = React.createClass({
         <div className="row">
           <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <p>Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!</p>
-            <form name="sentMessage" id="contactForm" novalidate>
+            <form name="sentMessage" id="contactForm" noValidate>
               <div className="row control-group">
                 <div className="form-group col-xs-12 floating-label-form-group controls">
                   <label>Name</label>
@@ -103,3 +105,5 @@ var Contact = React.createClass({
     );
   }
 });
+
+export default Contact;

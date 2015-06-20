@@ -1,26 +1,7 @@
-var Nav = React.createClass({
+import React from 'react';
 
-    goHome: function(){
-      React.render(
-        <Home />,
-        document.getElementById("main_content")
-      );
-    },
-    goAbout: function(){
-      React.render(
-        <About />,
-        document.getElementById("main_content")
-      );
-    },
-    goProjects: function(){
+let Nav = React.createClass({
 
-    },
-    goContact: function(){
-      React.render(
-        <Contact />,
-        document.getElementById("main_content")
-      );
-    },
     render: function() {
       return (
 
@@ -38,16 +19,16 @@ var Nav = React.createClass({
               <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul className="nav navbar-nav navbar-right">
                       <li>
-                          <a href="#/home" onClick={this.goHome}>Home</a>
+                           <a href="/">Home</a>
                       </li>
                       <li>
-                          <a href="#/about" onClick={this.goAbout}>About</a>
+                          <a href="#/about">About</a>
                       </li>
                       <li>
-                          <a href="#/projects" onClick={this.goProjects}>Projects</a>
+                          <a href="/projects">Projects</a>
                       </li>
                       <li>
-                          <a href="#/contact" onClick={this.goContact}>Contact</a>
+                          <a href="/contact">Contact</a>
                       </li>
                       <li>
                           <a href="//grievoushead.github.io/video-calls/">Video Call</a>
@@ -68,3 +49,5 @@ React.render(
   <Nav />,
   document.getElementById("main_nav")
 );
+
+export default Nav;
