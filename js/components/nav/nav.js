@@ -19,16 +19,16 @@ let Nav = React.createClass({
               <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul className="nav navbar-nav navbar-right">
                       <li>
-                           <a href="/">Home</a>
+                           <a href="#/">Home</a>
                       </li>
                       <li>
                           <a href="#/about">About</a>
                       </li>
                       <li>
-                          <a href="/projects">Projects</a>
+                          <a href="#/projects">Projects</a>
                       </li>
                       <li>
-                          <a href="/contact">Contact</a>
+                          <a href="#/contact">Contact</a>
                       </li>
                       <li>
                           <a href="//grievoushead.github.io/video-calls/">Video Call</a>
