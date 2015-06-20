@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "b94bf505f162be5ce563"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "3174e3afdc04aabd1a16"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -690,7 +690,7 @@
 
 	var routes = _react2['default'].createElement(_reactRouter.Route, { name: 'app', path: '/', handler: App }, _react2['default'].createElement(_reactRouter.Route, { name: 'home', path: '/', handler: _componentsHomeHomeJs2['default'] }), _react2['default'].createElement(_reactRouter.Route, { name: 'about', path: '/about', handler: _componentsAboutAboutJs2['default'] }), _react2['default'].createElement(_reactRouter.Route, { name: 'contact', path: '/contact', handler: _componentsContactContactJs2['default'] }));
 
-	_reactRouter2['default'].run(routes, _reactRouter2['default'].HistoryLocation, function (Handler) {
+	_reactRouter2['default'].run(routes, /*, Router.HistoryLocation*/function (Handler) {
 	  _react2['default'].render(_react2['default'].createElement(Handler, null), document.getElementById('main_content'));
 	});
 
@@ -24905,7 +24905,7 @@
 	    displayName: "Nav",
 
 	    render: function render() {
-	        return _react2["default"].createElement("nav", { className: "navbar navbar-default navbar-custom navbar-fixed-top" }, _react2["default"].createElement("div", { className: "container-fluid" }, _react2["default"].createElement("div", { className: "navbar-header page-scroll" }, _react2["default"].createElement("button", { type: "button", className: "navbar-toggle", "data-toggle": "collapse", "data-target": "#bs-example-navbar-collapse-1" }, _react2["default"].createElement("span", { className: "sr-only" }, "Toggle navigation"), _react2["default"].createElement("span", { className: "icon-bar" }), _react2["default"].createElement("span", { className: "icon-bar" }), _react2["default"].createElement("span", { className: "icon-bar" })), _react2["default"].createElement("a", { className: "navbar-brand", href: "/" }, "Sergey Kozachenko aka Grievoushead")), _react2["default"].createElement("div", { className: "collapse navbar-collapse", id: "bs-example-navbar-collapse-1" }, _react2["default"].createElement("ul", { className: "nav navbar-nav navbar-right" }, _react2["default"].createElement("li", null, _react2["default"].createElement("a", { href: "/" }, "Home")), _react2["default"].createElement("li", null, _react2["default"].createElement("a", { href: "#/about" }, "About")), _react2["default"].createElement("li", null, _react2["default"].createElement("a", { href: "/projects" }, "Projects")), _react2["default"].createElement("li", null, _react2["default"].createElement("a", { href: "/contact" }, "Contact")), _react2["default"].createElement("li", null, _react2["default"].createElement("a", { href: "//grievoushead.github.io/video-calls/" }, "Video Call")), _react2["default"].createElement("li", null, _react2["default"].createElement("a", { href: "//grievoushead.github.io/fire-chat/" }, "Chat"))))));
+	        return _react2["default"].createElement("nav", { className: "navbar navbar-default navbar-custom navbar-fixed-top" }, _react2["default"].createElement("div", { className: "container-fluid" }, _react2["default"].createElement("div", { className: "navbar-header page-scroll" }, _react2["default"].createElement("button", { type: "button", className: "navbar-toggle", "data-toggle": "collapse", "data-target": "#bs-example-navbar-collapse-1" }, _react2["default"].createElement("span", { className: "sr-only" }, "Toggle navigation"), _react2["default"].createElement("span", { className: "icon-bar" }), _react2["default"].createElement("span", { className: "icon-bar" }), _react2["default"].createElement("span", { className: "icon-bar" })), _react2["default"].createElement("a", { className: "navbar-brand", href: "/" }, "Sergey Kozachenko aka Grievoushead")), _react2["default"].createElement("div", { className: "collapse navbar-collapse", id: "bs-example-navbar-collapse-1" }, _react2["default"].createElement("ul", { className: "nav navbar-nav navbar-right" }, _react2["default"].createElement("li", null, _react2["default"].createElement("a", { href: "#/" }, "Home")), _react2["default"].createElement("li", null, _react2["default"].createElement("a", { href: "#/about" }, "About")), _react2["default"].createElement("li", null, _react2["default"].createElement("a", { href: "#/projects" }, "Projects")), _react2["default"].createElement("li", null, _react2["default"].createElement("a", { href: "#/contact" }, "Contact")), _react2["default"].createElement("li", null, _react2["default"].createElement("a", { href: "//grievoushead.github.io/video-calls/" }, "Video Call")), _react2["default"].createElement("li", null, _react2["default"].createElement("a", { href: "//grievoushead.github.io/fire-chat/" }, "Chat"))))));
 	    }
 	});
 
