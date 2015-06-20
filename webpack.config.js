@@ -4,7 +4,7 @@ module.exports = {
       'webpack/hot/only-dev-server',
       "./js/app.js"
     ],
-    devtool: "source-map",
+    // devtool: "source-map", // will add webpack:// into Chrome dev-cli
     output: {
         path: __dirname + '/build',
         filename: "bundle.min.js"
@@ -17,7 +17,7 @@ module.exports = {
         ]
     },
     plugins: [
-      new webpack.optimize.UglifyJsPlugin({minimize: true}),
+      new webpack.optimize.UglifyJsPlugin({minimize: true}), // will minify all js
       new webpack.HotModuleReplacementPlugin(),
       new webpack.NoErrorsPlugin()
     ]
