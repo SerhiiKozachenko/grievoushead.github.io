@@ -4,9 +4,10 @@ module.exports = {
       'webpack/hot/only-dev-server',
       "./js/app.js"
     ],
+    devtool: "source-map",
     output: {
         path: __dirname + '/build',
-        filename: "bundle.js"
+        filename: "bundle.min.js"
     },
     module: {
         loaders: [
@@ -16,6 +17,7 @@ module.exports = {
         ]
     },
     plugins: [
+      new webpack.optimize.UglifyJsPlugin({minimize: true}),
       new webpack.HotModuleReplacementPlugin(),
       new webpack.NoErrorsPlugin()
     ]
