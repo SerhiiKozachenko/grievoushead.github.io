@@ -1,3 +1,8 @@
+# Personal pages, blog, projects, CV, etc.
+
+# Technology stack
+- Bootstrap, React, ReactRouter, ES6-Babel, Webpack 
+
 # How to
 
 - run local dev server ``` npm start``` which will run ```webpack-dev-server --hot --progress --colors```
