@@ -4,4 +4,4 @@ source env/bin/activate
 alias ghost='cd ghost && npm start'
 alias generate='buster generate --domain=http://127.0.0.1:2368'
 alias preview='buster preview'
-alias deploy='cp -rf static/* ../. && git add -A && git commit -m "ghost busted" && git push origin master'
+alias deploy='cp -rf static/* ../. && git add --all :/ && git commit -m "ghost busted" && git push origin master'
