@@ -7,3 +7,9 @@ Install this starter (assuming Gatsby is installed) by running from your CLI:
 
 ## Running in development
 `gatsby develop`
+
+## Create a production build
+`gatsby build`
+
+## View the production site locally
+`gatsby serve`
